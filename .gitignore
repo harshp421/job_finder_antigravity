@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+env/
+venv/
+ENV/
+
+# Environment & Secrets
+.env
+*.env
+config/secrets.json
+
+# Data & Database
+data/*.db
+data/screenshots/*.png
+
+# Resume uploads
+resumes/*.pdf
+resumes/*.docx
+
+# IDE & OS
+.DS_Store
+.vscode/
+.idea/
