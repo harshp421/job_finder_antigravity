@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigravity Startup Job Pipeline | India & Remote Worldwide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0c10;
+      --bg-card: rgba(22, 27, 38, 0.7);
+      --bg-card-hover: rgba(28, 35, 51, 0.85);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(99, 102, 241, 0.35);
+      
+      --accent-indigo: #6366f1;
+      --accent-cyan: #06b6d4;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.1) 0%, transparent 40%);
+    }
+
+    .app-container { max-width: 1400px; margin: 0 auto; padding: 32px 24px 64px; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border-subtle);
+    }
+    .brand { display: flex; align-items: center; gap: 16px; }
+    .brand-icon {
+      width: 44px; height: 44px; border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 24px rgba(99, 102, 241, 0.4);
+    }
+    .brand-icon svg { width: 24px; height: 24px; color: white; }
+    .brand-title h1 {
+      font-size: 24px; font-weight: 700; letter-spacing: -0.5px;
+      background: linear-gradient(to right, #fff, #cbd5e1);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .brand-title p { font-size: 13px; color: var(--text-muted); }
+
+    .header-actions { display: flex; gap: 12px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px;
+      border-radius: var(--radius-sm); font-size: 13.5px; font-weight: 600; cursor: pointer;
+      transition: all 0.2s; border: 1px solid transparent; text-decoration: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #4f46e5, #06b6d4); color: white;
+      box-shadow: 0 4px 16px rgba(79, 70, 229, 0.35);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05); color: var(--text-main);
+      border-color: var(--border-subtle);
+    }
+
+    /* Metric Counters Grid */
+    .metrics-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 32px;
+    }
+    @media (max-width: 1024px) {
+      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .metric-card {
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md); padding: 18px; backdrop-filter: blur(16px);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .metric-card:hover { transform: translateY(-2px); border-color: var(--border-glow); }
+    .metric-title { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .metric-value { font-size: 32px; font-weight: 800; font-family: var(--font-mono); margin: 6px 0; }
+    .metric-sub { font-size: 12px; font-weight: 500; }
+
+    /* Startup Card */
+    .jobs-feed { display: flex; flex-direction: column; gap: 16px; }
+    .job-card {
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md); padding: 22px; backdrop-filter: blur(12px);
+      transition: all 0.2s; display: flex; flex-direction: column; gap: 14px;
+    }
+    .job-card:hover {
+      background: var(--bg-card-hover); border-color: var(--border-glow);
+      transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .job-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+    .startup-avatar {
+      width: 44px; height: 44px; border-radius: 8px;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(6, 182, 212, 0.2));
+      border: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: center;
+      font-weight: 800; color: var(--accent-cyan);
+    }
+    .job-title-row h3 { font-size: 17px; font-weight: 700; color: white; margin-bottom: 4px; }
+    .job-meta { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-muted); flex-wrap: wrap; }
+    
+    .badge-funding {
+      background: rgba(245, 158, 11, 0.15); color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3); padding: 3px 8px; border-radius: 4px;
+      font-size: 11px; font-weight: 700;
+    }
+    .badge-remote {
+      background: rgba(16, 185, 129, 0.15); color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3); padding: 3px 8px; border-radius: 4px;
+      font-size: 11px; font-weight: 700;
+    }
+    .badge-source {
+      background: rgba(99, 102, 241, 0.15); color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.3); padding: 3px 8px; border-radius: 4px;
+      font-size: 11px; font-weight: 600;
+    }
+
+    .startup-summary {
+      font-size: 13px; color: var(--text-dim); line-height: 1.5;
+      padding: 8px 12px; background: rgba(0, 0, 0, 0.2); border-radius: 6px;
+      border-left: 3px solid var(--accent-indigo);
+    }
+
+    .card-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 12px; border-top: 1px solid var(--border-subtle);
+    }
+    .score-badge {
+      display: flex; align-items: center; gap: 6px; padding: 6px 12px;
+      background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 6px; font-weight: 800; color: var(--accent-emerald); font-family: var(--font-mono);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <header>
+      <div class="brand">
+        <div class="brand-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <div class="brand-title">
+          <h1>Antigravity Startup Pipeline | India & Remote Worldwide</h1>
+          <p>Targeting YC, Series A/B Funded Tech Startups with Background & Funding Intelligence</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn btn-secondary" onclick="alert('Run: python main.py harvest --source startups')">Harvest Startups</button>
+        <button class="btn btn-primary" onclick="alert('Run: python main.py run-all')">Run Full Autopilot</button>
+      </div>
+    </header>
+
+    <!-- 5 Live Counter Metrics -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-title">Discovered Jobs</div>
+        <div class="metric-value" style="color: var(--accent-cyan);">30</div>
+        <div class="metric-sub" style="color: var(--text-muted);">Startups & Portals</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Evaluated by AI</div>
+        <div class="metric-value" style="color: var(--accent-indigo);">30</div>
+        <div class="metric-sub" style="color: var(--text-muted);">Against Harsh's Profile</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Queued (>=70%)</div>
+        <div class="metric-value" style="color: var(--accent-emerald);">10</div>
+        <div class="metric-sub" style="color: var(--accent-emerald);">High Signal Matches</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Applications Submitted</div>
+        <div class="metric-value" style="color: var(--accent-amber);">2</div>
+        <div class="metric-sub" style="color: var(--accent-amber);">Previewed / Logged</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Filtered Out (&lt;70%)</div>
+        <div class="metric-value" style="color: var(--accent-rose);">19</div>
+        <div class="metric-sub" style="color: var(--text-dim);">Non-tech / Junior Skipped</div>
+      </div>
+    </div>
+
+    <!-- Live Jobs Feed with Background Intelligence -->
+    <div class="jobs-feed">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <h2 style="font-size: 18px; font-weight: 700;">Curated Funded Startups Hiring for Remote Roles (India & Worldwide)</h2>
+        <span style="font-size: 13px; color: var(--text-muted);">Sorted by AI Compatibility Score</span>
+      </div>
+
+      <!-- Startup 1: SigNoz -->
+      <div class="job-card">
+        <div class="job-header">
+          <div style="display: flex; gap: 14px;">
+            <div class="startup-avatar">SN</div>
+            <div>
+              <h3>Senior Software Engineer - Frontend / Backend (AI)</h3>
+              <div class="job-meta">
+                <span style="font-weight: 700; color: white;">SigNoz</span>
+                <span>•</span>
+                <span class="badge-funding">YC S21 | $6.5M Series A</span>
+                <span>•</span>
+                <span class="badge-remote">Remote (India / Worldwide)</span>
+                <span>•</span>
+                <span class="badge-source">Ashby</span>
+              </div>
+            </div>
+          </div>
+          <div class="score-badge">76% Match</div>
+        </div>
+        <div class="startup-summary">
+          <strong>Startup Intelligence:</strong> Open-source observability and APM platform built on OpenTelemetry and ClickHouse. Alternative to Datadog. Founded by Indian engineers, fully distributed remote engineering team.
+        </div>
+        <div class="card-footer">
+          <span style="font-size: 12.5px; color: var(--text-dim);">Matched: Frontend, TypeScript, React, Python, Remote India confirmed</span>
+          <a href="https://jobs.ashbyhq.com/signoz" target="_blank" class="btn btn-secondary" style="font-size: 12px; padding: 6px 14px;">View Posting ↗</a>
+        </div>
+      </div>
+
+      <!-- Startup 2: Atlan -->
+      <div class="job-card">
+        <div class="job-header">
+          <div style="display: flex; gap: 14px;">
+            <div class="startup-avatar" style="color: #60a5fa;">AT</div>
+            <div>
+              <h3>Software Engineer - Data & Platform</h3>
+              <div class="job-meta">
+                <span style="font-weight: 700; color: white;">Atlan</span>
+                <span>•</span>
+                <span class="badge-funding">Series C ($105M) | Insight & Peak XV</span>
+                <span>•</span>
+                <span class="badge-remote">Remote (India / Worldwide)</span>
+                <span>•</span>
+                <span class="badge-source">Ashby</span>
+              </div>
+            </div>
+          </div>
+          <div class="score-badge">74% Match</div>
+        </div>
+        <div class="startup-summary">
+          <strong>Startup Intelligence:</strong> Pioneering Active Metadata and Data Governance platform founded in India. Backed by Insight Partners, Salesforce Ventures, and Peak XV (formerly Sequoia India). High growth with global enterprise clients.
+        </div>
+        <div class="card-footer">
+          <span style="font-size: 12.5px; color: var(--text-dim);">Matched: Platform Engineering, Python, Metadata, PostgreSQL</span>
+          <a href="https://jobs.ashbyhq.com/atlan" target="_blank" class="btn btn-secondary" style="font-size: 12px; padding: 6px 14px;">View Posting ↗</a>
+        </div>
+      </div>
+
+      <!-- Startup 3: Linear -->
+      <div class="job-card">
+        <div class="job-header">
+          <div style="display: flex; gap: 14px;">
+            <div class="startup-avatar" style="color: #a78bfa;">LN</div>
+            <div>
+              <h3>Full Stack Engineer - Product</h3>
+              <div class="job-meta">
+                <span style="font-weight: 700; color: white;">Linear</span>
+                <span>•</span>
+                <span class="badge-funding">Series B ($35M) | Accel & Sequoia</span>
+                <span>•</span>
+                <span class="badge-remote">Remote Worldwide</span>
+                <span>•</span>
+                <span class="badge-source">Ashby</span>
+              </div>
+            </div>
+          </div>
+          <div class="score-badge">78% Match</div>
+        </div>
+        <div class="startup-summary">
+          <strong>Startup Intelligence:</strong> World-renowned for craft, performance, and keyboard-first UI architecture. Built with TypeScript, React, and local-first SQLite sync. Backed by Accel and Sequoia.
+        </div>
+        <div class="card-footer">
+          <span style="font-size: 12.5px; color: var(--text-dim);">Matched: Full Stack, React, TypeScript, Performance optimization</span>
+          <a href="https://jobs.ashbyhq.com/linear" target="_blank" class="btn btn-secondary" style="font-size: 12px; padding: 6px 14px;">View Posting ↗</a>
+        </div>
+      </div>
+
+      <!-- Startup 4: Supabase -->
+      <div class="job-card">
+        <div class="job-header">
+          <div style="display: flex; gap: 14px;">
+            <div class="startup-avatar" style="color: #34d399;">SB</div>
+            <div>
+              <h3>Fullstack Engineer (Developer Experience & Platform)</h3>
+              <div class="job-meta">
+                <span style="font-weight: 700; color: white;">Supabase</span>
+                <span>•</span>
+                <span class="badge-funding">YC W20 | $116M Series B</span>
+                <span>•</span>
+                <span class="badge-remote">100% Remote Worldwide</span>
+                <span>•</span>
+                <span class="badge-source">Greenhouse</span>
+              </div>
+            </div>
+          </div>
+          <div class="score-badge">86% Match</div>
+        </div>
+        <div class="startup-summary">
+          <strong>Startup Intelligence:</strong> Open-source Firebase alternative based on PostgreSQL. Highly active in India, sponsors Indian dev events, and hires fully distributed remote engineers across India and globally.
+        </div>
+        <div class="card-footer">
+          <span style="font-size: 12.5px; color: var(--text-dim);">Matched: PostgreSQL, React, TypeScript, Full Stack</span>
+          <a href="https://boards-api.greenhouse.io/v1/boards/supabase/jobs" target="_blank" class="btn btn-secondary" style="font-size: 12px; padding: 6px 14px;">View Posting ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

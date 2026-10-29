@@ -1,0 +1,208 @@
+# ==============================================================================
+# Master Candidate Profile & Application Preferences
+# ==============================================================================
+# Configured for: Harsh Parmar (Software Development Engineer / Full Stack & Design Systems)
+# Used by the Antigravity Job Agent to:
+# 1. Filter jobs (location, remote preferences, role titles, tech stack)
+# 2. Score job descriptions against your experience (0-100% match)
+# 3. Automatically fill application forms and answer custom questions
+# ==============================================================================
+
+personal_info:
+  full_name: "Harsh Parmar"
+  first_name: "Harsh"
+  last_name: "Parmar"
+  email: "harshparmar0421@gmail.com"
+  phone: "+91-9537128189"
+  location: "Ahmedabad, Gujarat, India"
+  address: "Ahmedabad, Gujarat, India"
+  linkedin_url: "https://www.linkedin.com/in/harsh-parmar-717834232/"
+  github_url: "https://github.com/harshp421"
+  portfolio_url: "https://harsh-v1.vercel.app/"
+  resume_path: "resumes/Harsh_Parmar_Software_Engineer.pdf"
+
+job_search_preferences:
+  target_roles:
+    - "Senior Frontend Engineer"
+    - "Design Systems Engineer"
+    - "Frontend Architect"
+    - "Full Stack Developer"
+    - "Full Stack Engineer"
+    - "Software Development Engineer"
+    - "Software Engineer"
+    - "Backend Engineer"
+    - "SDE 2"
+    - "Platform Engineer"
+  remote_only: false # Accepts both Remote and target startup hubs (Dubai, Singapore, India)
+  preferred_locations:
+    - "Remote"
+    - "Worldwide"
+    - "India"
+    - "Dubai"
+    - "UAE"
+    - "Singapore"
+    - "United States"
+    - "Canada"
+    - "Europe"
+  min_salary_usd: 80000
+  minimum_match_score: 70 # Out of 100
+  daily_application_limit: 25 # Safety cap
+
+work_authorization:
+  authorized_to_work_in_target_country: true
+  requires_visa_sponsorship: false
+  citizenship: "India"
+
+tech_stack:
+  primary_languages:
+    - "JavaScript"
+    - "TypeScript"
+    - "Python"
+  frameworks_and_libraries:
+    - "React.js"
+    - "React"
+    - "React 19"
+    - "React 18"
+    - "Next.js"
+    - "Next.js 15"
+    - "SvelteKit"
+    - "Svelte 5"
+    - "Svelte"
+    - "Angular"
+    - "Vue 3"
+    - "HTMX 2"
+    - "Node.js"
+    - "Express.js"
+    - "FastAPI"
+    - "Tailwind"
+    - "Tailwind CSS"
+    - "shadcn"
+    - "nnui-kit"
+    - "nnuikit"
+    - "Redux"
+    - "Zustand"
+    - "React Flow"
+    - "Ionic"
+  databases_and_cloud:
+    - "PostgreSQL"
+    - "MongoDB"
+    - "Redis"
+    - "BigQuery"
+    - "Docker"
+    - "PgBouncer"
+    - "Neon DB"
+    - "GCP"
+    - "Azure"
+    - "Azure OpenAI"
+    - "Git"
+    - "Postman"
+    - "Firebase"
+    - "Stripe"
+    - "Razorpay"
+  systems_and_architecture:
+    - "Design Systems Architecture"
+    - "Light-DOM Web Components"
+    - "ElementInternals"
+    - "BroadcastChannel API"
+    - "W3C DTCG Design Tokens"
+    - "Accessibility (ARIA & Focus Traps)"
+    - "Virtualized Data Grids"
+    - "AI Introspection (llms.txt)"
+    - "DAG Orchestration"
+    - "Topological Sorting"
+    - "WebAssembly (WASI CPython)"
+    - "REST APIs"
+    - "DMN Decision Tables"
+    - "AES-256 Fernet Encryption"
+    - "Connection Pooling"
+    - "SSRF Guards"
+    - "Multi-Tenant RBAC"
+    - "Data Quality & Profiling"
+  years_of_experience: 3
+
+experience_highlights:
+  - role: "SDE 2"
+    company: "AAVIL Inc"
+    duration: "Jun 2026 – Present"
+    highlights:
+      - "Architect & Core Owner of Decision Intelligence Platform: An enterprise-grade governed workflow and decision orchestration platform connecting Data → Intelligence & Rules → Human Governance → Systems of Record."
+      - "Engineered single server-authoritative engine (executor.py & dag_scheduler.py) executing topological DAG graphs with dynamic variable interpolation ({{step.var}}) and cryptographic idempotency."
+      - "Built Dual Execution Engine supporting both interactive guided runner (stateful pause, non-destructive step rewind, side-effect safety guards) and headless trigger-driven automated batch runs (cron/webhooks)."
+      - "Designed catalog of 44+ modular workflow nodes: 11 statistical data quality checks (outlier detection, deduplication, PII detection, k-anonymity, EEOC fairness parity), supply chain solvers (safety stock optimization, disruption simulation, transport constraint solver), and Azure OpenAI LLM integrations."
+      - "Architected sandboxed Python execution using WebAssembly (WASI CPython) with zero host access, strict memory constraints, and timeout isolation."
+      - "Implemented database polling system with workflow-engine optimizations, introducing PgBouncer connection pooling to scale capacity from 20 to 80+ concurrent flow runners without failure."
+      - "Enforced enterprise security: AES-256 Fernet encrypted credential vault, SSRF/private subnet network protection, and org-scoped multi-tenancy."
+      - "Maintained regression safety net with 620+ automated tests and 154 golden snapshot replays ensuring deterministic execution across releases."
+      - "Built real-time stock pricing feature for StockGenius AI streaming live prices for NSE/BSE-listed companies and IPO scraper pulling fundamentals from Chittorgarh to power AI recommendation agents."
+  - role: "Full Stack Developer"
+    company: "Oizom"
+    duration: "Jan 2025 – May 2026"
+    highlights:
+      - "Developed the Oizom Design System (30+ components) with SvelteKit 5, TypeScript, and Tailwind, adopted across all products, reducing UI dev time by 50% to 80%."
+      - "Architected and own a full-stack internal admin tool for IoT sensor and device lifecycle management, achieving a 100x improvement in data handling capacity (from 1,000 to 100,000 rows) without memory leaks."
+      - "Engineered a high-performance migration from a legacy Angular system to modern stack, reducing initial page load time by 75% (from 4-5s to <1s)."
+      - "Managed complete front-end architecture and contributed to back-end API development using Node.js and Express.js for core software Envizom."
+      - "Designed and implemented token-based caching mechanism with a 30-minute validation window to prevent redundant API calls."
+      - "Developed air quality monitoring reports for enterprise client NEOM, ensuring accurate and efficient data processing."
+  - role: "Software Developer Intern"
+    company: "Oizom"
+    duration: "May 2024 – Dec 2024"
+    highlights:
+      - "Developed LawFinder, a legal data visualization tool mapping IPC to BNS with real-time updates via RSS."
+      - "Built the AIRowl informational website to present product features and air quality data using Next.js."
+      - "Worked on multiple innovation projects for internal and client use across the organization."
+  - role: "Front-End Developer Intern"
+    company: "WebOccult Technologies"
+    duration: "Jan 2023 – Jun 2023"
+    highlights:
+      - "Developed and maintained reusable React components, improving code efficiency and long-term maintainability."
+      - "Built responsive web pages using HTML5, CSS3, and Bootstrap aligned with design specifications."
+
+projects:
+  - name: "NNUI-KIT (Universal Light-DOM Component System)"
+    url: "https://nnuikit.com/"
+    stack: "Universal Light-DOM Components, TypeScript, CSS Variables, W3C DTCG Tokens, ElementInternals, BroadcastChannel, React 19/18, Svelte 5, Vue 3, HTMX 2, CLI"
+    highlights:
+      - "Architected NNUI-KIT (v1.0.5): An open-source, platform-native Light-DOM component architecture featuring 45 accessible components and primitives living 100% in the Light DOM without Shadow DOM traps or virtual DOM overhead."
+      - "Sub-40 KB Complete Suite: Engineered all 45 components + virtualized data grid + calendar to bundle into only 38.9 kB gzipped JavaScript — 5x lighter than MUI, Mantine, or Radix + AG Grid."
+      - "Native Form Participation: Solved web component form serialization natively using ElementInternals, allowing seamless form submission and global Tailwind/CSS cascade without Shadow DOM styling boundaries."
+      - "Declarative State & URL Sync: Built persist='url' and persist='local' primitives for automatic URL query sync and draft auto-saving without routing boilerplate."
+      - "Cross-Tab Broadcast Sync: Implemented sync='cross-tab' leveraging the native browser BroadcastChannel API for multi-tab synchronization with zero server or WebSocket overhead."
+      - "AI Introspection Protocol: Created element.inspectAI() protocol and llms.txt standard, returning machine-readable JSON schemas and state models tailored for autonomous AI coding agents (Claude, Cursor, Copilot)."
+      - "Multi-Framework Adapters: Authored first-class adapters for React 18 & 19 (Next.js 15 App Router), Svelte 5 (Runes), Vue 3 & Nuxt 3 (Composition API), Astro, and HTMX 2."
+      - "Developer CLI & Distribution: Created npx nnui init CLI for component installation and published to NPM (nnui-kit) with W3C DTCG token compliance and 11-step tonal harmony scales."
+  - name: "Decision Intelligence Platform"
+    url: "https://aavil.com/"
+    stack: "Python (FastAPI), React Flow, Node.js, PostgreSQL, PgBouncer, MongoDB, Azure OpenAI, WASI WebAssembly, Docker"
+    highlights:
+      - "Governed enterprise workflow & decision orchestration engine executing topological DAG graphs across 44+ modular nodes."
+      - "Engineered interactive runner with step-by-step state rewind, dry-run simulation studio, and human approval gates for ERP writes (SAP/Oracle)."
+      - "Scaled platform from 20 to 80+ concurrent runners via PgBouncer connection pooling and workflow polling optimizations."
+      - "Integrated WebAssembly (WASI CPython) for secure, sandboxed custom Python execution with zero host disk/network access."
+  - name: "TownPlanMap"
+    url: "https://townplanmap.com/"
+    stack: "SvelteKit, Angular, Ionic, MapLibre, Razorpay, OTPless"
+    highlights:
+      - "Cut map infrastructure costs from Rs. 1,25,000/month to Rs. 0 via open-source MapLibre migration."
+      - "Reduced OTP costs 50-70% by migrating from Google Firebase OTP to OTPless."
+  - name: "KredCarbon"
+    url: "https://kredcarbon.com/"
+    stack: "SvelteKit, Node.js, Express, PostgreSQL, Stripe, Google Maps"
+    highlights:
+      - "Built carbon credit marketplace connecting buyers and sellers from the ground up in 2 months."
+      - "Built web scraper aggregating 10K+ projects from Gold Standard, Verra, and Isometric registries."
+
+education:
+  degree: "M.Sc. & B.Sc. in Computer Applications & Information Technology (CA & IT)"
+  institution: "KS School of Business Management, Ahmedabad, India"
+  graduation_year: "2025"
+
+standard_question_answers:
+  notice_period_weeks: 2
+  available_start_date: "Immediately / 2 weeks notice"
+  preferred_work_type: "Full-time Remote"
+  salary_expectation_usd: "80,000 - 140,000"
+  why_join_us_template: >
+    I am a Senior Frontend & Full Stack Systems Engineer with deep expertise across modern web architecture, component design systems, and scalable backend platforms. As the creator of NNUI-KIT (nnuikit.com), I architected a 45-component platform-native Light-DOM component system with native form participation (ElementInternals), cross-tab sync (BroadcastChannel), and sub-40KB runtime. At AAVIL Inc, I architected the Decision Intelligence Platform scaling distributed workflow engines with PgBouncer to 80+ concurrent runners. I thrive in high-ownership remote engineering teams shipping foundational, high-performance software.
+  proud_project_template: >
+    I take immense pride in architecting NNUI-KIT (nnuikit.com), an open-source universal Light-DOM component architecture with 45 accessible components bundling into only 38.9 kB gzipped (5x lighter than MUI/Mantine). I engineered native form participation using ElementInternals to eliminate Shadow DOM traps, declarative state persistence (persist='url'/'local'), real-time multi-window sync (BroadcastChannel), and an AI Introspection Protocol (element.inspectAI() / llms.txt) tailored for AI coding agents. Coupled with my work scaling AAVIL's Decision Intelligence workflow engine to 80+ concurrent flow runs with PgBouncer, it reflects my passion for platform-grade developer tooling and systems engineering.
